@@ -11,7 +11,7 @@
   sudo systemctl status bind9
 
 Assurez-vous qu'il est actif et en cours d'exécution.
-![active-dns](https://github.com/KAOUTARBAH/dns-linux/blob/main/images/active-dns.png)
+![plage-dns](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/test2.png)
 
 
 ### Désactiver l'authentification par mot de passe obsolète
