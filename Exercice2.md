@@ -5,7 +5,6 @@
 -
 
 
-
 - Vérifiez l'état du service Bind9 :
   ```bash
   sudo systemctl status bind9
