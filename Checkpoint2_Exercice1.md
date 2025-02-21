@@ -37,33 +37,26 @@ Le but est de faire communiquer les 2 machines entre elle.
 ![ping nom client](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingnomclient.png)
 ![ping nom server](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingnomserver.png)
 
--
--
--
--
+### Q.1.3 Modifie la configuration réseau du client pour qu'il soit en DHCP.
+### Vérifie le paramétrage DHCP sur le serveur et compare le avec l'adresse IP du client.
+- Commande de Configuration DHCP : Get-DhcpServerv4Scope
+- addresse ip client c'est 172.16.10.20 
 
+### Explique pourquoi le client ne récupère pas la 1ère adresse disponible sur la plage DHCP du serveur ?
+Le serveur DHCP attribue les adresses IP en fonction d’un bail et tente de réattribuer l’adresse précédemment utilisée par un client.
 
+### Fais une copie d'écran montrant l'adresse IP prise par le client.
+![ping client dhcp](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingdhcp.png)
 
-- Vérifiez l'état du service Bind9 :
-  ```bash
-  sudo systemctl status bind9
+### Q.1.4 Est-ce que ce client peut avoir l'adresse IP 172.16.10.15 en DHCP ?
+#### Si oui fais les manipulations nécessaires.
+- Oui on doit donner une adresse MAC client pour d'obtenir l'adresse 172.16.10.15 dans la reservation 
+#### Explique ce que tu as fait et montre par une copie d'écran le résultat de la commande ipconfig /all sur le client.
+- Mettre en place une attribution statique pour une machine cliente particulière dont l'adresse MAC 0800278920E1 permet d'obtenir l'adresse 172.16.10.15
+- Dhcp --> winserv --> IPv4 --> Scope[172.10.0.0] vlan 10 --> Resevation 
+- New Reservation :
+	Resrvation name : ResrvationClient1
+	IP address :  172.16.10.15
+	MAC Addresse : Resrvati0800278920E1 
+	![ping client dhcp](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingMacClient.png)
 
-Assurez-vous qu'il est actif et en cours d'exécution.
-![plage-dns](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/test2.png)
-
-
-### Désactiver l'authentification par mot de passe obsolète
-	```bash
-	ChallengeResponseAuthentication no
-	UsePAM no
-
-### Autoriser uniquement le protocole SSH version 2
-	```bash
-	Protocol 2
-
-
-## Configuration côté client :
-
-1. Générer une paire de clés SSH
-	```bash
-	ssh-keygen -t rsa -b 4096
