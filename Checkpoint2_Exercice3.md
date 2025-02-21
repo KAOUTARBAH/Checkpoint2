@@ -45,6 +45,6 @@ Pour cela, suivre et répondre aux questions.
 - Le switch ne route pas le trafic entre deux réseaux différents. Dans ce cas, PC2 et PC3 devront passer par un routeur pour pouvoir communiquer, même si leurs ports sont intervertis.
 
 ### Q.3.10 On souhaite mettre la configuration IP des ordinateurs en dynamique. Quelles sont les modifications possible ?
-ajouter un serveur dhcp et configuer la plage réseau
-Configurer un serveur DHCP .
-Modifier les paramètres IP des ordinateurs pour qu'ils obtiennent une adresse automatiquement.
+- ajouter un serveur dhcp et configuer la plage réseau
+- Configurer un serveur DHCP .
+- Modifier les paramètres IP des ordinateurs pour qu'ils obtiennent une adresse automatiquement.
