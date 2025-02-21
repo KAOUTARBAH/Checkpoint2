@@ -6,8 +6,8 @@ Le but est de faire communiquer les 2 machines entre elle.
 ## b. Pratique
 ### Q.1.1 Pourquoi le ping avec les adresses IP des machines ne fonctionnent pas ?
 - Prace que les deux machaine ne sont pas dans le meme réseaux .
-machaine client est l'adresse ip : 172.16.100.50/24  @ reseaux 172.16.100.0
-et machine serveur est l'adresse ip : 172.16.10.10 /24 @ R2SEAUX 172.16.10.0
+- La achaine client est l'adresse ip : 172.16.100.50/24  @ reseaux 172.16.100.0
+- Et machine serveur est l'adresse ip : 172.16.10.10 /24 @ R2SEAUX 172.16.10.0
 
 #### Modifie la configuration sur le client pour que cela soit possible.
 - je donne l'adresse ip au client  172.16.10.20 /24 
