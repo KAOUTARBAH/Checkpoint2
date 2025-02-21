@@ -16,7 +16,7 @@ et machine serveur est l'adresse ip : 172.16.10.10 /24 @ R2SEAUX 172.16.10.0
 #### Explique ce que tu as fait et montre le par des copies d'écran.
 ![adresse client](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/@clt.png)
 
-#### n doit avoir la copie d'écran d'un ping fonctionnel.
+#### On doit avoir la copie d'écran d'un ping fonctionnel.
 ![ping serveur](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingServer.png)
 ![ping client](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingClient.png)
 
