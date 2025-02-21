@@ -28,8 +28,14 @@ Le but est de faire communiquer les 2 machines entre elle.
 	```bash
 	172.16.10.20    CLIENT1
 
+- Sur le client on ouvre ce fichier : C:\Windows\System32\drivers\etc\hosts.
+- ajouter la ligne suivante 
+	```bash
+	172.16.10.10    WINSERV
+
 #### On doit avoir la copie d'écran d'un ping fonctionnel.
-![plage-dns](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingnomclient.png)
+![ping nom client](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingnomclient.png)
+![ping nom server](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingnomserver.png)
 
 -
 -
