@@ -59,5 +59,6 @@ Le serveur DHCP attribue les adresses IP en fonction d’un bail et tente de ré
 	Resrvation name : ResrvationClient1
 	IP address :  172.16.10.15
 	MAC Addresse : Resrvati0800278920E1 
-	![ping client dhcp](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingMacClient.png)
+
+![ping client dhcp](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingMacClient.png)
 
