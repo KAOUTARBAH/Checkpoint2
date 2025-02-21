@@ -12,13 +12,24 @@ Le but est de faire communiquer les 2 machines entre elle.
 #### Modifie la configuration sur le client pour que cela soit possible.
 - je donne l'adresse ip au client  172.16.10.20 /24 
 
-
 #### Explique ce que tu as fait et montre le par des copies d'écran.
 ![adresse client](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/@clt.png)
 
 #### On doit avoir la copie d'écran d'un ping fonctionnel.
 ![ping serveur](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingServer.png)
 ![ping client](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingClient.png)
+
+
+### Q.1.2 Le ping avec le nom des machines ne fonctionne pas.
+#### Modifie la configuration sur le client et/ou le serveur pour que cela soit possible et qu'un ping entre les 2 machines fonctionne avec le nom.
+#### Explique ce que tu as fait et montre le par des copies d'écran.
+- Sur le serveur on ouvre ce fichier : C:\Windows\System32\drivers\etc\hosts.
+- ajouter la ligne suivante 
+	```bash
+	172.16.10.20    CLIENT1
+
+#### On doit avoir la copie d'écran d'un ping fonctionnel.
+![plage-dns](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/pingnomclient.png)
 
 -
 -
