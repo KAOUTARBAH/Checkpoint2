@@ -55,6 +55,7 @@ Le serveur DHCP attribue les adresses IP en fonction d’un bail et tente de ré
 - Mettre en place une attribution statique pour une machine cliente particulière dont l'adresse MAC 0800278920E1 permet d'obtenir l'adresse 172.16.10.15
 - Dhcp --> winserv --> IPv4 --> Scope[172.10.0.0] vlan 10 --> Resevation 
 - New Reservation :
+	```
 	Resrvation name : ResrvationClient1
 	IP address :  172.16.10.15
 	MAC Addresse : Resrvati0800278920E1 
