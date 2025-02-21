@@ -26,33 +26,25 @@ Pour cela, suivre et répondre aux questions.
 ### Q.3.5 Pour ce même ordinateur, que représente l'adresse 10.10.255.254 ?
 - passerelle par défaut.
 
+## c. Etude théorique
+### Q.3.6 Pour les ordinateur PC1, PC2, et PC5 donne :
 
--
--
--
--
+#### L'adresse de réseau :  10.10.0.0/16
+#### La première adresse disponible :  10.10.0.1
+#### La dernière adresse disponible :  10.10.255.254
+#### L'adresse de diffusion : 10.10.255.255
 
+### Q.3.7 En t'aidant des informations que tu as fourni à la question 3.6, et à l'aide de tes connaissances, indique parmi tous les ordinateurs du schéma, lesquels vont pouvoir communiquer entre-eux.
+- PC1 et pc3 et pc 4 peuvent comminiquer entre eux
 
-- Vérifiez l'état du service Bind9 :
-  ```bash
-  sudo systemctl status bind9
+### Q.3.8 De même, indique ceux qui vont pouvoir atteindre le réseau 172.16.5.0/24.
+- PC1 et pc3 et pc 4 
 
-Assurez-vous qu'il est actif et en cours d'exécution.
-![plage-dns](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/images/test2.png)
+### Q.3.9 Quel incidence y-a-t'il pour les ordinateurs PC2 et PC3 si on interverti leur ports de connexion sur le matériel A ?
+- le  PC2 et PC3 ne sont pas dans le même réseau le switch ne pourra pas faire de communication entre eux directement.
+- Le switch ne route pas le trafic entre deux réseaux différents. Dans ce cas, PC2 et PC3 devront passer par un routeur pour pouvoir communiquer, même si leurs ports sont intervertis.
 
-
-### Désactiver l'authentification par mot de passe obsolète
-	```bash
-	ChallengeResponseAuthentication no
-	UsePAM no
-
-### Autoriser uniquement le protocole SSH version 2
-	```bash
-	Protocol 2
-
-
-## Configuration côté client :
-
-1. Générer une paire de clés SSH
-	```bash
-	ssh-keygen -t rsa -b 4096
+### Q.3.10 On souhaite mettre la configuration IP des ordinateurs en dynamique. Quelles sont les modifications possible ?
+ajouter un serveur dhcp et configuer la plage réseau
+Configurer un serveur DHCP .
+Modifier les paramètres IP des ordinateurs pour qu'ils obtiennent une adresse automatiquement.
