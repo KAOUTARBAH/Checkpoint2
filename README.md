@@ -7,4 +7,4 @@
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-[Execice1](Execice1)](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/Checkpoint2_Exercice1.md)
+[Execice1](https://github.com/KAOUTARBAH/Checkpoint2/blob/main/Checkpoint2_Exercice1.md)
